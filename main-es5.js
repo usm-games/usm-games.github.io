@@ -98,6 +98,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/router */
     "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
+    /* harmony import */
+
+
+    var _components_toasts_toasts_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ./components/toasts/toasts.component */
+    "./src/app/components/toasts/toasts.component.ts");
 
     var AppComponent = function AppComponent() {
       _classCallCheck(this, AppComponent);
@@ -110,14 +116,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: AppComponent,
       selectors: [["app-root"]],
-      decls: 1,
+      decls: 2,
       vars: 0,
       template: function AppComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "router-outlet");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "app-toasts");
         }
       },
-      directives: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterOutlet"]],
+      directives: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterOutlet"], _components_toasts_toasts_component__WEBPACK_IMPORTED_MODULE_2__["ToastsComponent"]],
       styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIn0= */"]
     });
     /*@__PURE__*/
@@ -333,6 +341,18 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _views_my_submissions_my_submissions_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(
     /*! ./views/my-submissions/my-submissions.component */
     "./src/app/views/my-submissions/my-submissions.component.ts");
+    /* harmony import */
+
+
+    var _components_toasts_toasts_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(
+    /*! ./components/toasts/toasts.component */
+    "./src/app/components/toasts/toasts.component.ts");
+    /* harmony import */
+
+
+    var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(
+    /*! @ng-bootstrap/ng-bootstrap */
+    "./node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js");
 
     Object(_angular_common__WEBPACK_IMPORTED_MODULE_24__["registerLocaleData"])(_angular_common_locales_es__WEBPACK_IMPORTED_MODULE_23___default.a);
     var routes = [{
@@ -365,13 +385,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         provide: _angular_core__WEBPACK_IMPORTED_MODULE_1__["LOCALE_ID"],
         useValue: 'es-CL'
       }, _guards_injectable_redirect_to_panel__WEBPACK_IMPORTED_MODULE_10__["RedirectToPanel"]],
-      imports: [[_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_router__WEBPACK_IMPORTED_MODULE_8__["RouterModule"].forRoot(routes), _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ReactiveFormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClientModule"], _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_11__["FontAwesomeModule"]]]
+      imports: [[_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_router__WEBPACK_IMPORTED_MODULE_8__["RouterModule"].forRoot(routes), _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ReactiveFormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClientModule"], _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_11__["FontAwesomeModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_30__["NgbToastModule"]]]
     });
 
     (function () {
       (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, {
-        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"], _components_login_form_login_form_component__WEBPACK_IMPORTED_MODULE_4__["LoginFormComponent"], _views_user_panel_user_panel_component__WEBPACK_IMPORTED_MODULE_6__["UserPanelComponent"], _views_login_card_login_card_component__WEBPACK_IMPORTED_MODULE_7__["LoginCardComponent"], _components_challenges_list_challenges_list_component__WEBPACK_IMPORTED_MODULE_12__["ChallengesListComponent"], _components_challenge_create_form_challenge_create_form_component__WEBPACK_IMPORTED_MODULE_13__["ChallengeCreateFormComponent"], _views_challenge_submission_challenge_submission_component__WEBPACK_IMPORTED_MODULE_14__["ChallengeSubmissionComponent"], _components_submission_form_submission_form_component__WEBPACK_IMPORTED_MODULE_15__["SubmissionFormComponent"], _components_challenge_submission_form_challenge_submission_form_component__WEBPACK_IMPORTED_MODULE_16__["ChallengeSubmissionFormComponent"], _components_challenge_list_group_challenge_list_group_component__WEBPACK_IMPORTED_MODULE_17__["ChallengeListGroupComponent"], _components_challenge_display_challenge_display_component__WEBPACK_IMPORTED_MODULE_18__["ChallengeDisplayComponent"], _views_challenge_evaluation_challenge_evaluation_component__WEBPACK_IMPORTED_MODULE_19__["ChallengeEvaluationComponent"], _components_submission_list_group_submission_list_group_component__WEBPACK_IMPORTED_MODULE_20__["SubmissionListGroupComponent"], _components_challenge_list_group_item_challenge_list_group_item_component__WEBPACK_IMPORTED_MODULE_21__["ChallengeListGroupItemComponent"], _components_evaluation_form_evaluation_form_component__WEBPACK_IMPORTED_MODULE_22__["EvaluationFormComponent"], _components_submission_list_group_item_submission_list_group_item_component__WEBPACK_IMPORTED_MODULE_25__["SubmissionListGroupItemComponent"], _components_submission_display_submission_display_component__WEBPACK_IMPORTED_MODULE_26__["SubmissionDisplayComponent"], _views_user_register_user_register_component__WEBPACK_IMPORTED_MODULE_27__["UserRegisterComponent"], _views_my_submissions_my_submissions_component__WEBPACK_IMPORTED_MODULE_28__["MySubmissionsComponent"]],
-        imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_router__WEBPACK_IMPORTED_MODULE_8__["RouterModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ReactiveFormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClientModule"], _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_11__["FontAwesomeModule"]]
+        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"], _components_login_form_login_form_component__WEBPACK_IMPORTED_MODULE_4__["LoginFormComponent"], _views_user_panel_user_panel_component__WEBPACK_IMPORTED_MODULE_6__["UserPanelComponent"], _views_login_card_login_card_component__WEBPACK_IMPORTED_MODULE_7__["LoginCardComponent"], _components_challenges_list_challenges_list_component__WEBPACK_IMPORTED_MODULE_12__["ChallengesListComponent"], _components_challenge_create_form_challenge_create_form_component__WEBPACK_IMPORTED_MODULE_13__["ChallengeCreateFormComponent"], _views_challenge_submission_challenge_submission_component__WEBPACK_IMPORTED_MODULE_14__["ChallengeSubmissionComponent"], _components_submission_form_submission_form_component__WEBPACK_IMPORTED_MODULE_15__["SubmissionFormComponent"], _components_challenge_submission_form_challenge_submission_form_component__WEBPACK_IMPORTED_MODULE_16__["ChallengeSubmissionFormComponent"], _components_challenge_list_group_challenge_list_group_component__WEBPACK_IMPORTED_MODULE_17__["ChallengeListGroupComponent"], _components_challenge_display_challenge_display_component__WEBPACK_IMPORTED_MODULE_18__["ChallengeDisplayComponent"], _views_challenge_evaluation_challenge_evaluation_component__WEBPACK_IMPORTED_MODULE_19__["ChallengeEvaluationComponent"], _components_submission_list_group_submission_list_group_component__WEBPACK_IMPORTED_MODULE_20__["SubmissionListGroupComponent"], _components_challenge_list_group_item_challenge_list_group_item_component__WEBPACK_IMPORTED_MODULE_21__["ChallengeListGroupItemComponent"], _components_evaluation_form_evaluation_form_component__WEBPACK_IMPORTED_MODULE_22__["EvaluationFormComponent"], _components_submission_list_group_item_submission_list_group_item_component__WEBPACK_IMPORTED_MODULE_25__["SubmissionListGroupItemComponent"], _components_submission_display_submission_display_component__WEBPACK_IMPORTED_MODULE_26__["SubmissionDisplayComponent"], _views_user_register_user_register_component__WEBPACK_IMPORTED_MODULE_27__["UserRegisterComponent"], _views_my_submissions_my_submissions_component__WEBPACK_IMPORTED_MODULE_28__["MySubmissionsComponent"], _components_toasts_toasts_component__WEBPACK_IMPORTED_MODULE_29__["ToastsComponent"], _components_toasts_toasts_component__WEBPACK_IMPORTED_MODULE_29__["ToastsComponent"]],
+        imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_router__WEBPACK_IMPORTED_MODULE_8__["RouterModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ReactiveFormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClientModule"], _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_11__["FontAwesomeModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_30__["NgbToastModule"]]
       });
     })();
     /*@__PURE__*/
@@ -381,8 +401,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AppModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
         args: [{
-          declarations: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"], _components_login_form_login_form_component__WEBPACK_IMPORTED_MODULE_4__["LoginFormComponent"], _views_user_panel_user_panel_component__WEBPACK_IMPORTED_MODULE_6__["UserPanelComponent"], _views_login_card_login_card_component__WEBPACK_IMPORTED_MODULE_7__["LoginCardComponent"], _components_challenges_list_challenges_list_component__WEBPACK_IMPORTED_MODULE_12__["ChallengesListComponent"], _components_challenge_create_form_challenge_create_form_component__WEBPACK_IMPORTED_MODULE_13__["ChallengeCreateFormComponent"], _views_challenge_submission_challenge_submission_component__WEBPACK_IMPORTED_MODULE_14__["ChallengeSubmissionComponent"], _components_submission_form_submission_form_component__WEBPACK_IMPORTED_MODULE_15__["SubmissionFormComponent"], _components_challenge_submission_form_challenge_submission_form_component__WEBPACK_IMPORTED_MODULE_16__["ChallengeSubmissionFormComponent"], _components_challenge_list_group_challenge_list_group_component__WEBPACK_IMPORTED_MODULE_17__["ChallengeListGroupComponent"], _components_challenge_display_challenge_display_component__WEBPACK_IMPORTED_MODULE_18__["ChallengeDisplayComponent"], _views_challenge_evaluation_challenge_evaluation_component__WEBPACK_IMPORTED_MODULE_19__["ChallengeEvaluationComponent"], _components_submission_list_group_submission_list_group_component__WEBPACK_IMPORTED_MODULE_20__["SubmissionListGroupComponent"], _components_challenge_list_group_item_challenge_list_group_item_component__WEBPACK_IMPORTED_MODULE_21__["ChallengeListGroupItemComponent"], _components_evaluation_form_evaluation_form_component__WEBPACK_IMPORTED_MODULE_22__["EvaluationFormComponent"], _components_submission_list_group_item_submission_list_group_item_component__WEBPACK_IMPORTED_MODULE_25__["SubmissionListGroupItemComponent"], _components_submission_display_submission_display_component__WEBPACK_IMPORTED_MODULE_26__["SubmissionDisplayComponent"], _views_user_register_user_register_component__WEBPACK_IMPORTED_MODULE_27__["UserRegisterComponent"], _views_my_submissions_my_submissions_component__WEBPACK_IMPORTED_MODULE_28__["MySubmissionsComponent"]],
-          imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_router__WEBPACK_IMPORTED_MODULE_8__["RouterModule"].forRoot(routes), _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ReactiveFormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClientModule"], _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_11__["FontAwesomeModule"]],
+          declarations: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"], _components_login_form_login_form_component__WEBPACK_IMPORTED_MODULE_4__["LoginFormComponent"], _views_user_panel_user_panel_component__WEBPACK_IMPORTED_MODULE_6__["UserPanelComponent"], _views_login_card_login_card_component__WEBPACK_IMPORTED_MODULE_7__["LoginCardComponent"], _components_challenges_list_challenges_list_component__WEBPACK_IMPORTED_MODULE_12__["ChallengesListComponent"], _components_challenge_create_form_challenge_create_form_component__WEBPACK_IMPORTED_MODULE_13__["ChallengeCreateFormComponent"], _views_challenge_submission_challenge_submission_component__WEBPACK_IMPORTED_MODULE_14__["ChallengeSubmissionComponent"], _components_submission_form_submission_form_component__WEBPACK_IMPORTED_MODULE_15__["SubmissionFormComponent"], _components_challenge_submission_form_challenge_submission_form_component__WEBPACK_IMPORTED_MODULE_16__["ChallengeSubmissionFormComponent"], _components_challenge_list_group_challenge_list_group_component__WEBPACK_IMPORTED_MODULE_17__["ChallengeListGroupComponent"], _components_challenge_display_challenge_display_component__WEBPACK_IMPORTED_MODULE_18__["ChallengeDisplayComponent"], _views_challenge_evaluation_challenge_evaluation_component__WEBPACK_IMPORTED_MODULE_19__["ChallengeEvaluationComponent"], _components_submission_list_group_submission_list_group_component__WEBPACK_IMPORTED_MODULE_20__["SubmissionListGroupComponent"], _components_challenge_list_group_item_challenge_list_group_item_component__WEBPACK_IMPORTED_MODULE_21__["ChallengeListGroupItemComponent"], _components_evaluation_form_evaluation_form_component__WEBPACK_IMPORTED_MODULE_22__["EvaluationFormComponent"], _components_submission_list_group_item_submission_list_group_item_component__WEBPACK_IMPORTED_MODULE_25__["SubmissionListGroupItemComponent"], _components_submission_display_submission_display_component__WEBPACK_IMPORTED_MODULE_26__["SubmissionDisplayComponent"], _views_user_register_user_register_component__WEBPACK_IMPORTED_MODULE_27__["UserRegisterComponent"], _views_my_submissions_my_submissions_component__WEBPACK_IMPORTED_MODULE_28__["MySubmissionsComponent"], _components_toasts_toasts_component__WEBPACK_IMPORTED_MODULE_29__["ToastsComponent"], _components_toasts_toasts_component__WEBPACK_IMPORTED_MODULE_29__["ToastsComponent"]],
+          imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_router__WEBPACK_IMPORTED_MODULE_8__["RouterModule"].forRoot(routes), _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ReactiveFormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClientModule"], _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_11__["FontAwesomeModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_30__["NgbToastModule"]],
           providers: [{
             provide: _angular_core__WEBPACK_IMPORTED_MODULE_1__["LOCALE_ID"],
             useValue: 'es-CL'
@@ -2438,7 +2458,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("disabled", ctx.evidences.length <= 0 || ctx.loading);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("disabled", ctx.evidences.length <= 1 || ctx.loading);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
 
@@ -3156,30 +3176,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! @angular/forms */
     "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
-    /* harmony import */
-
-
-    var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
-    /*! @angular/common */
-    "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
-
-    function LoginFormComponent_div_11_Template(rf, ctx) {
-      if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 8);
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-      }
-
-      if (rf & 2) {
-        var ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx_r0.error);
-      }
-    }
 
     var LoginFormComponent = /*#__PURE__*/function () {
       function LoginFormComponent(auth, router) {
@@ -3229,9 +3225,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     LoginFormComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: LoginFormComponent,
       selectors: [["app-login-form"]],
-      decls: 12,
-      vars: 4,
-      consts: [[1, "login-form", "text-left"], [1, "form-group"], ["for", "username"], ["id", "username", "type", "text", "name", "username", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "password", "required", ""], ["id", "password", "type", "password", "name", "password", 1, "form-control", 3, "ngModel", "ngModelChange"], ["type", "submit", 1, "btn", "btn-danger", 3, "disabled", "click"], ["class", "alert alert-danger", 4, "ngIf"], [1, "alert", "alert-danger"]],
+      decls: 11,
+      vars: 3,
+      consts: [[1, "login-form", "text-left"], [1, "form-group"], ["for", "username"], ["id", "username", "type", "text", "name", "username", 1, "form-control", 3, "ngModel", "ngModelChange"], ["for", "password", "required", ""], ["id", "password", "type", "password", "name", "password", 1, "form-control", 3, "ngModel", "ngModelChange"], ["type", "submit", 1, "btn", "btn-danger", 3, "disabled", "click"]],
       template: function LoginFormComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "form", 0);
@@ -3283,8 +3279,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](11, LoginFormComponent_div_11_Template, 2, 1, "div", 7);
-
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         }
 
@@ -3300,13 +3294,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("disabled", ctx.disabled);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.error);
         }
       },
-      directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_4__["ɵangular_packages_forms_forms_y"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgControlStatusGroup"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgForm"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgModel"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgIf"]],
+      directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_4__["ɵangular_packages_forms_forms_y"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgControlStatusGroup"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgForm"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgModel"]],
       styles: [".login-form[_ngcontent-%COMP%]   .form-group[_ngcontent-%COMP%] {\r\n  margin-top: 20px;\r\n  margin-bottom: 60px;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9sb2dpbi1mb3JtL2xvZ2luLWZvcm0uY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGdCQUFnQjtFQUNoQixtQkFBbUI7QUFDckIiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL2xvZ2luLWZvcm0vbG9naW4tZm9ybS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmxvZ2luLWZvcm0gLmZvcm0tZ3JvdXAge1xyXG4gIG1hcmdpbi10b3A6IDIwcHg7XHJcbiAgbWFyZ2luLWJvdHRvbTogNjBweDtcclxufVxyXG4iXX0= */"]
     });
     /*@__PURE__*/
@@ -4273,6 +4263,150 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
+  "./src/app/components/toasts/toasts.component.ts":
+  /*!*******************************************************!*\
+    !*** ./src/app/components/toasts/toasts.component.ts ***!
+    \*******************************************************/
+
+  /*! exports provided: ToastsComponent */
+
+  /***/
+  function srcAppComponentsToastsToastsComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "ToastsComponent", function () {
+      return ToastsComponent;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _services_toast_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ../../services/toast.service */
+    "./src/app/services/toast.service.ts");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
+    /* harmony import */
+
+
+    var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @ng-bootstrap/ng-bootstrap */
+    "./node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js");
+
+    function ToastsComponent_ngb_toast_0_Template(rf, ctx) {
+      if (rf & 1) {
+        var _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "ngb-toast", 1);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("hide", function ToastsComponent_ngb_toast_0_Template_ngb_toast_hide_0_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r3);
+
+          var toast_r1 = ctx.$implicit;
+
+          var ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+
+          return ctx_r2.toastService.remove(toast_r1);
+        });
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      }
+
+      if (rf & 2) {
+        var toast_r1 = ctx.$implicit;
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassMap"](toast_r1.classname);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("autohide", true)("delay", toast_r1.delay || 5000);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", toast_r1.text, "\n");
+      }
+    }
+
+    var ToastsComponent = /*#__PURE__*/function () {
+      function ToastsComponent(toastService) {
+        _classCallCheck(this, ToastsComponent);
+
+        this.toastService = toastService;
+      }
+
+      _createClass(ToastsComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
+
+      return ToastsComponent;
+    }();
+
+    ToastsComponent.ɵfac = function ToastsComponent_Factory(t) {
+      return new (t || ToastsComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_toast_service__WEBPACK_IMPORTED_MODULE_1__["ToastService"]));
+    };
+
+    ToastsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+      type: ToastsComponent,
+      selectors: [["app-toasts"]],
+      hostVars: 2,
+      hostBindings: function ToastsComponent_HostBindings(rf, ctx) {
+        if (rf & 2) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("ngb-toasts", true);
+        }
+      },
+      decls: 1,
+      vars: 1,
+      consts: [[3, "class", "autohide", "delay", "hide", 4, "ngFor", "ngForOf"], [3, "autohide", "delay", "hide"]],
+      template: function ToastsComponent_Template(rf, ctx) {
+        if (rf & 1) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, ToastsComponent_ngb_toast_0_Template, 2, 5, "ngb-toast", 0);
+        }
+
+        if (rf & 2) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.toastService.toasts);
+        }
+      },
+      directives: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["NgForOf"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_3__["NgbToast"]],
+      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvdG9hc3RzL3RvYXN0cy5jb21wb25lbnQuY3NzIn0= */"]
+    });
+    /*@__PURE__*/
+
+    (function () {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ToastsComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+          selector: 'app-toasts',
+          templateUrl: './toasts.component.html',
+          styleUrls: ['./toasts.component.css'],
+          host: {
+            '[class.ngb-toasts]': 'true'
+          }
+        }]
+      }], function () {
+        return [{
+          type: _services_toast_service__WEBPACK_IMPORTED_MODULE_1__["ToastService"]
+        }];
+      }, null);
+    })();
+    /***/
+
+  },
+
+  /***/
   "./src/app/errors/app-error.ts":
   /*!*************************************!*\
     !*** ./src/app/errors/app-error.ts ***!
@@ -4676,87 +4810,86 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-    /*! tslib */
-    "./node_modules/tslib/tslib.es6.js");
-    /* harmony import */
-
-
-    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
     /* harmony import */
 
 
-    var _auth0_angular_jwt__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    var _auth0_angular_jwt__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @auth0/angular-jwt */
     "./node_modules/@auth0/angular-jwt/__ivy_ngcc__/fesm2015/auth0-angular-jwt.js");
+    /* harmony import */
+
+
+    var _errors_invalid_error__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ../errors/invalid-error */
+    "./src/app/errors/invalid-error.ts");
     /* harmony import */
 
 
     var _wp_data_page_manger_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
     /*! ./wp-data/page-manger.service */
     "./src/app/services/wp-data/page-manger.service.ts");
+    /* harmony import */
+
+
+    var _toast_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ./toast.service */
+    "./src/app/services/toast.service.ts");
 
     var AuthService = /*#__PURE__*/function () {
-      function AuthService(pm) {
+      function AuthService(pm, toasts) {
         _classCallCheck(this, AuthService);
 
         this.pm = pm;
+        this.toasts = toasts;
       }
 
       _createClass(AuthService, [{
         key: "login",
         value: function login(username, password) {
-          return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-            return regeneratorRuntime.wrap(function _callee$(_context) {
-              while (1) {
-                switch (_context.prev = _context.next) {
-                  case 0:
-                    _context.next = 2;
-                    return this.pm.post('auth/login', {
-                      username: username,
-                      password: password
-                    });
+          var _this7 = this;
 
-                  case 2:
-                    AuthService.auth = _context.sent;
-                    return _context.abrupt("return", AuthService.auth);
+          return this.pm.post('auth/login', {
+            username: username,
+            password: password
+          }).then(function (auth) {
+            AuthService.auth = auth;
+            return AuthService.auth;
+          })["catch"](function (err) {
+            _this7.toasts.showError('Credenciales inválidas');
 
-                  case 4:
-                  case "end":
-                    return _context.stop();
-                }
-              }
-            }, _callee, this);
-          }));
+            throw err;
+          });
         }
       }, {
         key: "registerUser",
         value: function registerUser(email, displayName) {
+          var _this8 = this;
+
           var isAdmin = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
-          return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee2() {
-            return regeneratorRuntime.wrap(function _callee2$(_context2) {
-              while (1) {
-                switch (_context2.prev = _context2.next) {
-                  case 0:
-                    _context2.next = 2;
-                    return this.pm.post('users', {
-                      email: email,
-                      display_name: displayName,
-                      admin: isAdmin
-                    });
+          return this.pm.post('users', {
+            email: email,
+            display_name: displayName,
+            admin: isAdmin
+          }).then(function (user) {
+            _this8.toasts.showSuccess("El usuario ".concat(user.username, " ha sido registrado"));
 
-                  case 2:
-                    return _context2.abrupt("return", _context2.sent);
-
-                  case 3:
-                  case "end":
-                    return _context2.stop();
-                }
+            return user;
+          })["catch"](function (err) {
+            if (err instanceof _errors_invalid_error__WEBPACK_IMPORTED_MODULE_2__["InvalidError"]) {
+              if (err.error.error.code === 'EMAIL_IN_USE') {
+                _this8.toasts.showError('Este correo ya está registrado');
+              } else {
+                _this8.toasts.showError('Unknown error');
               }
-            }, _callee2, this);
-          }));
+            } else {
+              _this8.toasts.showError('Unknown error');
+            }
+
+            throw err;
+          });
         }
       }, {
         key: "me",
@@ -4772,7 +4905,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         key: "isAuthenticated",
         value: function isAuthenticated() {
           if (AuthService.auth) {
-            var jwtHelper = new _auth0_angular_jwt__WEBPACK_IMPORTED_MODULE_2__["JwtHelperService"]();
+            var jwtHelper = new _auth0_angular_jwt__WEBPACK_IMPORTED_MODULE_1__["JwtHelperService"]();
             if (jwtHelper.isTokenExpired(AuthService.auth.token)) this.logout();
           }
 
@@ -4799,10 +4932,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     }();
 
     AuthService.ɵfac = function AuthService_Factory(t) {
-      return new (t || AuthService)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_wp_data_page_manger_service__WEBPACK_IMPORTED_MODULE_3__["PageMangerService"]));
+      return new (t || AuthService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_wp_data_page_manger_service__WEBPACK_IMPORTED_MODULE_3__["PageMangerService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_toast_service__WEBPACK_IMPORTED_MODULE_4__["ToastService"]));
     };
 
-    AuthService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
+    AuthService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
       token: AuthService,
       factory: AuthService.ɵfac,
       providedIn: 'root'
@@ -4810,16 +4943,111 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /*@__PURE__*/
 
     (function () {
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AuthService, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"],
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AuthService, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
         args: [{
           providedIn: 'root'
         }]
       }], function () {
         return [{
           type: _wp_data_page_manger_service__WEBPACK_IMPORTED_MODULE_3__["PageMangerService"]
+        }, {
+          type: _toast_service__WEBPACK_IMPORTED_MODULE_4__["ToastService"]
         }];
       }, null);
+    })();
+    /***/
+
+  },
+
+  /***/
+  "./src/app/services/toast.service.ts":
+  /*!*******************************************!*\
+    !*** ./src/app/services/toast.service.ts ***!
+    \*******************************************/
+
+  /*! exports provided: ToastService */
+
+  /***/
+  function srcAppServicesToastServiceTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "ToastService", function () {
+      return ToastService;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+
+    var ToastService = /*#__PURE__*/function () {
+      function ToastService() {
+        _classCallCheck(this, ToastService);
+
+        this.toasts = [];
+      }
+
+      _createClass(ToastService, [{
+        key: "showError",
+        value: function showError(text) {
+          this.show(text, {
+            classname: 'bg-danger text-light',
+            delay: 15000
+          });
+        }
+      }, {
+        key: "showSuccess",
+        value: function showSuccess(text) {
+          this.show(text, {
+            classname: 'bg-success text-light',
+            delay: 15000
+          });
+        }
+      }, {
+        key: "show",
+        value: function show(text) {
+          var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+          var toast = Object.assign({
+            text: text
+          }, options);
+          this.toasts.push(toast);
+        }
+      }, {
+        key: "remove",
+        value: function remove(toast) {
+          this.toasts = this.toasts.filter(function (t) {
+            return t !== toast;
+          });
+        }
+      }]);
+
+      return ToastService;
+    }();
+
+    ToastService.ɵfac = function ToastService_Factory(t) {
+      return new (t || ToastService)();
+    };
+
+    ToastService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
+      token: ToastService,
+      factory: ToastService.ɵfac,
+      providedIn: 'root'
+    });
+    /*@__PURE__*/
+
+    (function () {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ToastService, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
+        args: [{
+          providedIn: 'root'
+        }]
+      }], null, null);
     })();
     /***/
 
@@ -5166,12 +5394,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _page_manger_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! ./page-manger.service */
     "./src/app/services/wp-data/page-manger.service.ts");
+    /* harmony import */
+
+
+    var _toast_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ../toast.service */
+    "./src/app/services/toast.service.ts");
 
     var SubmissionsService = /*#__PURE__*/function () {
-      function SubmissionsService(pm) {
+      function SubmissionsService(pm, toasts) {
         _classCallCheck(this, SubmissionsService);
 
         this.pm = pm;
+        this.toasts = toasts;
       }
 
       _createClass(SubmissionsService, [{
@@ -5202,19 +5437,31 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "approve",
         value: function approve(submission, comment, points) {
+          var _this9 = this;
+
           return this.pm.post("challenges/".concat(submission.challenge_id, "/submissions/").concat(submission.user_id, "/evaluate"), {
             approved: true,
             comment: comment,
             points: points
+          }).then(function (data) {
+            _this9.toasts.showSuccess('Se ha aprobado esta entrega');
+
+            return data;
           });
         }
       }, {
         key: "reject",
         value: function reject(submission, comment) {
+          var _this10 = this;
+
           return this.pm.post("challenges/".concat(submission.challenge_id, "/submissions/").concat(submission.user_id, "/evaluate"), {
             approved: false,
             comment: comment,
             points: 0
+          }).then(function (data) {
+            _this10.toasts.showSuccess('Se ha rechazado esta entrega');
+
+            return data;
           });
         }
       }], [{
@@ -5229,7 +5476,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     }();
 
     SubmissionsService.ɵfac = function SubmissionsService_Factory(t) {
-      return new (t || SubmissionsService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_page_manger_service__WEBPACK_IMPORTED_MODULE_2__["PageMangerService"]));
+      return new (t || SubmissionsService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_page_manger_service__WEBPACK_IMPORTED_MODULE_2__["PageMangerService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_toast_service__WEBPACK_IMPORTED_MODULE_3__["ToastService"]));
     };
 
     SubmissionsService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
@@ -5248,6 +5495,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }], function () {
         return [{
           type: _page_manger_service__WEBPACK_IMPORTED_MODULE_2__["PageMangerService"]
+        }, {
+          type: _toast_service__WEBPACK_IMPORTED_MODULE_3__["ToastService"]
         }];
       }, null);
     })();
@@ -6175,37 +6424,43 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    var _services_toast_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! ../../services/toast.service */
+    "./src/app/services/toast.service.ts");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
     /*! @angular/common */
     "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
     /* harmony import */
 
 
-    var _components_challenge_create_form_challenge_create_form_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    var _components_challenge_create_form_challenge_create_form_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
     /*! ../../components/challenge-create-form/challenge-create-form.component */
     "./src/app/components/challenge-create-form/challenge-create-form.component.ts");
     /* harmony import */
 
 
-    var _challenge_evaluation_challenge_evaluation_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    var _challenge_evaluation_challenge_evaluation_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
     /*! ../challenge-evaluation/challenge-evaluation.component */
     "./src/app/views/challenge-evaluation/challenge-evaluation.component.ts");
     /* harmony import */
 
 
-    var _user_register_user_register_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+    var _user_register_user_register_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
     /*! ../user-register/user-register.component */
     "./src/app/views/user-register/user-register.component.ts");
     /* harmony import */
 
 
-    var _challenge_submission_challenge_submission_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+    var _challenge_submission_challenge_submission_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
     /*! ../challenge-submission/challenge-submission.component */
     "./src/app/views/challenge-submission/challenge-submission.component.ts");
     /* harmony import */
 
 
-    var _my_submissions_my_submissions_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+    var _my_submissions_my_submissions_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
     /*! ../my-submissions/my-submissions.component */
     "./src/app/views/my-submissions/my-submissions.component.ts");
 
@@ -6391,7 +6646,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"]("Bienvenid@: ", user_r13.display_name, " (", user_r13.roles.join(", "), ")");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("Bienvenid@: ", user_r13.display_name, "");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -6672,22 +6927,23 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     }
 
     var UserPanelComponent = /*#__PURE__*/function () {
-      function UserPanelComponent(auth, router, modalService) {
+      function UserPanelComponent(auth, router, modalService, toasts) {
         _classCallCheck(this, UserPanelComponent);
 
         this.auth = auth;
         this.router = router;
         this.modalService = modalService;
+        this.toasts = toasts;
       }
 
       _createClass(UserPanelComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this7 = this;
+          var _this11 = this;
 
           this.user$ = this.auth.me().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["catchError"])(function (err) {
             if (err instanceof _errors_forbidden_error__WEBPACK_IMPORTED_MODULE_2__["ForbiddenError"]) {
-              return _this7.logout().then(function () {
+              return _this11.logout().then(function () {
                 return null;
               });
             }
@@ -6718,7 +6974,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     }();
 
     UserPanelComponent.ɵfac = function UserPanelComponent_Factory(t) {
-      return new (t || UserPanelComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_auth_service__WEBPACK_IMPORTED_MODULE_3__["AuthService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__["NgbModal"]));
+      return new (t || UserPanelComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_auth_service__WEBPACK_IMPORTED_MODULE_3__["AuthService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__["NgbModal"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_services_toast_service__WEBPACK_IMPORTED_MODULE_6__["ToastService"]));
     };
 
     UserPanelComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
@@ -6729,7 +6985,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       consts: [[4, "ngIf", "ngIfElse"], ["loading", ""], ["createChallenge", ""], ["evaluateChallenge", ""], ["registerUser", ""], ["submitChallenge", ""], ["mySubmissions", ""], [1, "row", "mb-2", "info"], [1, "col-12"], [1, "alert", "alert-info"], ["href", "https://github.com/usm-games/usmgames-page-manager/issues", "target", "_blank"], [1, "container-fluid"], [1, "row"], [1, "card", "bg-dark", "mb-3", "col-12", "text-center"], [1, "card-body"], [1, "col", "col-panel-buttons"], ["class", "row-8 text-center align-items-center", 4, "ngIf"], ["class", "row-6 text-center align-items-center", 4, "ngIf"], [1, "row-6", "text-center", "align-items-center"], ["type", "button", 1, "btn", "btn-primary", 3, "click"], [1, "row-4", "text-center", "align-items-center"], ["type", "button", "id", "exit", 1, "btn", "btn-primary", 3, "click"], [1, "row-8", "text-center", "align-items-center"], ["type", "button", 1, "btn", "btn-light", 3, "click"], [1, "row", "mt-2"], [1, "col-12", "text-center"], [1, "spinner-border", "text-danger"], [1, "text-danger"], [1, "modal-header"], [1, "modal-title"], ["type", "button", "aria-label", "Close", 1, "close", 3, "click"], ["aria-hidden", "true"], [1, "modal-body"], [3, "submitted"], [3, "user"]],
       template: function UserPanelComponent_Template(rf, ctx) {
         if (rf & 1) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, UserPanelComponent_div_0_Template, 20, 5, "div", 0);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, UserPanelComponent_div_0_Template, 20, 4, "div", 0);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](1, "async");
 
@@ -6772,8 +7028,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](1, 2, ctx.user$))("ngIfElse", _r1);
         }
       },
-      directives: [_angular_common__WEBPACK_IMPORTED_MODULE_6__["NgIf"], _components_challenge_create_form_challenge_create_form_component__WEBPACK_IMPORTED_MODULE_7__["ChallengeCreateFormComponent"], _challenge_evaluation_challenge_evaluation_component__WEBPACK_IMPORTED_MODULE_8__["ChallengeEvaluationComponent"], _user_register_user_register_component__WEBPACK_IMPORTED_MODULE_9__["UserRegisterComponent"], _challenge_submission_challenge_submission_component__WEBPACK_IMPORTED_MODULE_10__["ChallengeSubmissionComponent"], _my_submissions_my_submissions_component__WEBPACK_IMPORTED_MODULE_11__["MySubmissionsComponent"]],
-      pipes: [_angular_common__WEBPACK_IMPORTED_MODULE_6__["AsyncPipe"]],
+      directives: [_angular_common__WEBPACK_IMPORTED_MODULE_7__["NgIf"], _components_challenge_create_form_challenge_create_form_component__WEBPACK_IMPORTED_MODULE_8__["ChallengeCreateFormComponent"], _challenge_evaluation_challenge_evaluation_component__WEBPACK_IMPORTED_MODULE_9__["ChallengeEvaluationComponent"], _user_register_user_register_component__WEBPACK_IMPORTED_MODULE_10__["UserRegisterComponent"], _challenge_submission_challenge_submission_component__WEBPACK_IMPORTED_MODULE_11__["ChallengeSubmissionComponent"], _my_submissions_my_submissions_component__WEBPACK_IMPORTED_MODULE_12__["MySubmissionsComponent"]],
+      pipes: [_angular_common__WEBPACK_IMPORTED_MODULE_7__["AsyncPipe"]],
       styles: [".bg-dark[_ngcontent-%COMP%] {\r\n  background-color: #E80049 !important;\r\n  border: solid 1px #272727 !important;\r\n  color: aliceblue;\r\n  box-shadow: 0px 12px 24px #14131538;\r\n}\r\ndiv[_ngcontent-%COMP%]   .container-fluid[_ngcontent-%COMP%]{\r\n  padding: 0px;\r\n}\r\n.info[_ngcontent-%COMP%] {\r\n  position: fixed;\r\n  bottom: 20px;\r\n  width: 100%;\r\n  margin: 0;\r\n}\r\n\r\n.col-panel-buttons[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]{\r\n  min-height: 60px;\r\n  background-color: #E80049;\r\n  border-color: rgb(238, 34, 99);\r\n  color: aliceblue;\r\n  margin-top: 15px;\r\n  box-shadow: 0px 12px 24px #1413158e;\r\n  min-width: 200px;\r\n  border-radius: 12px;\r\n}\r\n.col-panel-buttons[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]:hover{\r\n  background-color: rgb(238, 34, 99);\r\n}\r\n#exit[_ngcontent-%COMP%]{\r\n background-color:#141315;\r\n border-width: 3px;\r\n min-width: 150px;\r\n\r\n\r\n}\r\n#exit[_ngcontent-%COMP%]:hover{\r\n background-color:#1b181d;\r\n border-width: 3px;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdmlld3MvdXNlci1wYW5lbC91c2VyLXBhbmVsLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxvQ0FBb0M7RUFDcEMsb0NBQW9DO0VBQ3BDLGdCQUFnQjtFQUNoQixtQ0FBbUM7QUFDckM7QUFDQTtFQUNFLFlBQVk7QUFDZDtBQUVBO0VBQ0UsZUFBZTtFQUNmLFlBQVk7RUFDWixXQUFXO0VBQ1gsU0FBUztBQUNYO0FBRUE7Ozs7R0FJRztBQUVIO0VBQ0UsZ0JBQWdCO0VBQ2hCLHlCQUF5QjtFQUN6Qiw4QkFBOEI7RUFDOUIsZ0JBQWdCO0VBQ2hCLGdCQUFnQjtFQUNoQixtQ0FBbUM7RUFDbkMsZ0JBQWdCO0VBQ2hCLG1CQUFtQjtBQUNyQjtBQUNBO0VBQ0Usa0NBQWtDO0FBQ3BDO0FBQ0E7Q0FDQyx3QkFBd0I7Q0FDeEIsaUJBQWlCO0NBQ2pCLGdCQUFnQjs7O0FBR2pCO0FBQ0E7Q0FDQyx3QkFBd0I7Q0FDeEIsaUJBQWlCO0FBQ2xCIiwiZmlsZSI6InNyYy9hcHAvdmlld3MvdXNlci1wYW5lbC91c2VyLXBhbmVsLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYmctZGFyayB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI0U4MDA0OSAhaW1wb3J0YW50O1xyXG4gIGJvcmRlcjogc29saWQgMXB4ICMyNzI3MjcgIWltcG9ydGFudDtcclxuICBjb2xvcjogYWxpY2VibHVlO1xyXG4gIGJveC1zaGFkb3c6IDBweCAxMnB4IDI0cHggIzE0MTMxNTM4O1xyXG59XHJcbmRpdiAuY29udGFpbmVyLWZsdWlke1xyXG4gIHBhZGRpbmc6IDBweDtcclxufVxyXG5cclxuLmluZm8ge1xyXG4gIHBvc2l0aW9uOiBmaXhlZDtcclxuICBib3R0b206IDIwcHg7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgbWFyZ2luOiAwO1xyXG59XHJcblxyXG4vKiBAbWVkaWEgKG1heC13aWR0aDogNTc2cHgpe1xyXG4gIC5jb2wtcGFuZWwtYnV0dG9uc3tcclxuICAgIFxyXG4gIH1cclxufSAqL1xyXG5cclxuLmNvbC1wYW5lbC1idXR0b25zIGJ1dHRvbntcclxuICBtaW4taGVpZ2h0OiA2MHB4O1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICNFODAwNDk7XHJcbiAgYm9yZGVyLWNvbG9yOiByZ2IoMjM4LCAzNCwgOTkpO1xyXG4gIGNvbG9yOiBhbGljZWJsdWU7XHJcbiAgbWFyZ2luLXRvcDogMTVweDtcclxuICBib3gtc2hhZG93OiAwcHggMTJweCAyNHB4ICMxNDEzMTU4ZTtcclxuICBtaW4td2lkdGg6IDIwMHB4O1xyXG4gIGJvcmRlci1yYWRpdXM6IDEycHg7XHJcbn1cclxuLmNvbC1wYW5lbC1idXR0b25zIGJ1dHRvbjpob3ZlcntcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjM4LCAzNCwgOTkpO1xyXG59XHJcbiNleGl0e1xyXG4gYmFja2dyb3VuZC1jb2xvcjojMTQxMzE1O1xyXG4gYm9yZGVyLXdpZHRoOiAzcHg7XHJcbiBtaW4td2lkdGg6IDE1MHB4O1xyXG5cclxuXHJcbn1cclxuI2V4aXQ6aG92ZXJ7XHJcbiBiYWNrZ3JvdW5kLWNvbG9yOiMxYjE4MWQ7XHJcbiBib3JkZXItd2lkdGg6IDNweDtcclxufVxyXG5cclxuIl19 */"]
     });
     /*@__PURE__*/
@@ -6793,6 +7049,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]
         }, {
           type: _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__["NgbModal"]
+        }, {
+          type: _services_toast_service__WEBPACK_IMPORTED_MODULE_6__["ToastService"]
         }];
       }, null);
     })();
@@ -6952,17 +7210,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "register",
         value: function register() {
-          var _this8 = this;
+          var _this12 = this;
 
           this.loading = true;
           return this.users.registerUser(this.email.value, this.displayName.value, this.isAdmin.value).then(function () {
-            _this8.email.setValue('');
+            _this12.email.setValue('');
 
-            _this8.displayName.setValue('');
+            _this12.displayName.setValue('');
 
-            _this8.isAdmin.setValue(false);
+            _this12.isAdmin.setValue(false);
           })["finally"](function () {
-            return _this8.loading = false;
+            return _this12.loading = false;
           });
         }
       }, {
